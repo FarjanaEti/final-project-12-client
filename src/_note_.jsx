@@ -9,3 +9,14 @@
 //formik
 //react hook form
 //drawer daisy
+
+
+//*****
+// jwt token
+//library node.js 
+//npm install jsonwebtoken
+//var jwt = require('jsonwebtoken');
+//node
+//require('crypto').randomBytes(64).toString('hex')
+//.env te rakho token
+//  */

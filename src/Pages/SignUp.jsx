@@ -4,8 +4,8 @@ import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import Swal from 'sweetalert2'
 import { AuthContext } from "../Provider/AuthProvider";
-import useAxiosPublic from "../hooks/useAxiosPublic";
 import SocialLogin from "./Shared/SocialLogin";
+import useAxiosPublic from "../hooks/useAxiosPublic";
 
 const SignUp = () => {
     const axiosPublic = useAxiosPublic();
