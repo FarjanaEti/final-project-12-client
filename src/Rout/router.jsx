@@ -12,6 +12,7 @@ import Secret from '../Pages/Shared/Secret';
 import PrivateRoute from './PrivateRout';
 import DashBoard from '../Layout/DashBoard';
 import Cart from '../Pages/DashboardPage/Cart';
+import AllUser from '../Pages/DashboardPage/AllUser';
 
 const router = createBrowserRouter([
   {
@@ -48,11 +49,15 @@ const router = createBrowserRouter([
   },
   {
     path:'dashboard',
-    element:<DashBoard></DashBoard>,
+    element:<PrivateRoute><DashBoard></DashBoard></PrivateRoute> ,
     children:[
       {
         path:'cart',
         element:<Cart></Cart>
+      },
+      {
+        path:'users',
+        element:<AllUser></AllUser>
       }
     ]
   }
